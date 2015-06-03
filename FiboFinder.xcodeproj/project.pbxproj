@@ -22,6 +22,7 @@
 		726CD3F6193D6905003902C0 /* FISFiboFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 726CD3F5193D6905003902C0 /* FISFiboFinder.m */; };
 		726CD3F8193D695C003902C0 /* FISFiboFinderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */; };
 		72AE7E62193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */; };
+		BD08769F1B1FAE1500B43F05 /* FISFiboFinderAdvanced.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08769E1B1FAE1500B43F05 /* FISFiboFinderAdvanced.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		726CD3F5193D6905003902C0 /* FISFiboFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinder.m; sourceTree = "<group>"; };
 		726CD3F7193D695C003902C0 /* FISFiboFinderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderSpec.m; sourceTree = "<group>"; };
 		72AE7E61193E6B0E00A26365 /* FISFiboFinderAdvancedSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderAdvancedSpec.m; sourceTree = "<group>"; };
+		BD08769D1B1FAE1500B43F05 /* FISFiboFinderAdvanced.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISFiboFinderAdvanced.h; sourceTree = "<group>"; };
+		BD08769E1B1FAE1500B43F05 /* FISFiboFinderAdvanced.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISFiboFinderAdvanced.m; sourceTree = "<group>"; };
 		E887FA2CFADA3A20EF31AD90 /* Pods-FiboFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FiboFinderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FiboFinderTests/Pods-FiboFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +122,8 @@
 		726CD3CB193D1EA3003902C0 /* FiboFinder */ = {
 			isa = PBXGroup;
 			children = (
+				BD08769D1B1FAE1500B43F05 /* FISFiboFinderAdvanced.h */,
+				BD08769E1B1FAE1500B43F05 /* FISFiboFinderAdvanced.m */,
 				726CD3F4193D6905003902C0 /* FISFiboFinder.h */,
 				726CD3F5193D6905003902C0 /* FISFiboFinder.m */,
 				726CD3D4193D1EA3003902C0 /* FISAppDelegate.h */,
@@ -301,6 +306,7 @@
 			files = (
 				726CD3D2193D1EA3003902C0 /* main.m in Sources */,
 				726CD3F6193D6905003902C0 /* FISFiboFinder.m in Sources */,
+				BD08769F1B1FAE1500B43F05 /* FISFiboFinderAdvanced.m in Sources */,
 				726CD3D6193D1EA3003902C0 /* FISAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,10 +458,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FiboFinder/FiboFinder-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = ADVANCED;
 				INFOPLIST_FILE = "FiboFinderTests/FiboFinderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -475,6 +478,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FiboFinder/FiboFinder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = ADVANCED;
 				INFOPLIST_FILE = "FiboFinderTests/FiboFinderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
